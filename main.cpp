@@ -29,9 +29,8 @@ unsigned long getSumOfDivisors(unsigned long l){
 }
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Searching Amicable Numbers\n";
+    std::cout << "(^ ^)I'm ready!! Thank you for using this program!!\n";
     
-    unsigned long i = 0;
     unsigned long f = 2;
     unsigned long pair = 0;
     

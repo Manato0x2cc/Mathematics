@@ -36,10 +36,10 @@ int main(int argc, const char * argv[]) {
     unsigned long pair = 0;
     
     for (unsigned long i = 0; i < ULONG_MAX - 2; ++i) {
-        if(getSumOfDivisors(f) == 1) {
+        if((pair = getSumOfDivisors(f)) == 1) {
             std::cout << std::to_string(f) + "...こいつは素数やなぁ!" << std::endl;
         }
-        if(f == (getSumOfDivisors(pair = getSumOfDivisors(f)))){
+        if(f == (getSumOfDivisors(pair))){
             if(f == pair){
                 std::cout << std::to_string(f) + "...こいつは完全数やなぁ!" << std::endl;
             }else{
